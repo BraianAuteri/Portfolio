@@ -6,9 +6,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Grid, Link } from "@mui/material";
 import { Box } from "@mui/system";
-import Slide from 'react-reveal/Slide';
 import img from "../img/arkcomp.jpg"
 import img2 from "../img/cakemom.jpg"
+import { Slide } from "react-awesome-reveal";
 
 export function Cards() {
 return (
@@ -35,7 +35,7 @@ return (
         rowGap={{xs:2}}
         >
             {/* Primera card */}
-            <Slide left>
+            <Slide direction="left" triggerOnce={true}>
             <Card sx={{
                 maxWidth: 345,
                 bgcolor: "#282828",
@@ -64,8 +64,8 @@ return (
                     </CardActions>
                 </Card>
             </Slide>
-        {/* Segunda card */}
-            <Slide right>
+            {/* Segunda card */}
+            <Slide direction="right" triggerOnce={true}>
             <Card sx={{
                 maxWidth: 345,
                 bgcolor: "#282828"}}>
@@ -90,8 +90,8 @@ return (
                             </Link>
                         </Button>
                     </CardActions>
-                </Card>
-                </Slide>
+            </Card>
+            </Slide>
         </Grid>
     </Box>
 );}

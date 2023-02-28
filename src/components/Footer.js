@@ -1,6 +1,5 @@
 import { Button, Grid, Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import Fade from 'react-reveal/Fade';
 
 export function Footer() {
     return (
@@ -8,7 +7,6 @@ export function Footer() {
             p: "2vw 8vw",
             bgcolor:"#111111",
         }}>
-            <Fade>
         <Grid container direction="row" justify="space-around">
             <Grid item xs="6">
                 <Typography variant="h4" align="center" gutterBottom={true} color="#a3ffe2">
@@ -48,7 +46,6 @@ export function Footer() {
                 </Grid>
             </Grid>
                 </Grid>
-                </Fade>
     </Box>
 );
 }

@@ -1,18 +1,18 @@
 import { Grid, Typography} from "@mui/material"
 import { Box } from "@mui/system";
-import { Slide } from "react-reveal";
-import Fade from 'react-reveal/Fade';
+import { Zoom } from "react-awesome-reveal";
+
+
 
 export function CenteredText() {
     return (
-    
+        
         <Box sx={{
             bgcolor: "#282828",
             p: "6vw 8vw",
 
             color: "#ffffff",
         }}>
-            <Fade>
             <Grid container direction="column" justify="space-around" alignItems="center" spacing={3}>
             <Grid item xs>
                 <Typography variant="body1" align="center" gutterBottom={true}>
@@ -21,21 +21,20 @@ export function CenteredText() {
                 </Typography>
             </Grid>
             
-            <Slide right>
+            <Zoom triggerOnce={true}>
             <Grid item xs paddingTop="15px">
                 <Typography variant="body1" align="center" gutterBottom={true} color="#a3ffe2">
-                    <b>Hola!, mi nombre es Braian Auteri. </b>
+                <b>Hola!, mi nombre es Braian Auteri. </b>
                 </Typography>
-                </Grid>
-            </Slide>
+                </Grid></Zoom>
+            
             <Grid item xs>
-                <Typography variant="body1" align="center">
+                    <Typography variant="body1" align="center">
                             Así fue como una vez finalizado el terciario comence a investigar sobre la programación.
                             Allí es donde apareció la oportunidad de realizar un curso gratuito sobre introducción a la programación, una vez terminado el curso busqué que area de la programación estudiar y así es como decidí comenzar en el desarrollo Front-End. 
-                </Typography>
+                    </Typography>
             </Grid>
                 </Grid>
-                </Fade>
             </Box>
     );
 }
